@@ -2,7 +2,7 @@ defmodule HelpdeskWeb.Tickets.CreateLive do
   use HelpdeskWeb, :live_view
   alias AshPhoenix.Form
   alias Helpdesk.Accounts
-  alias Helpdesk.Support.Ticket
+  alias Helpdesk.Support
 
   def render(assigns) do
     ~H"""
