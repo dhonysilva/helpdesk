@@ -31,6 +31,12 @@ defmodule Helpdesk.Support.Ticket do
     end
   end
 
+  # This resource belongs to a tenant
+
+  multitenancy do
+    strategy :context
+  end
+
   attributes do
     uuid_primary_key :id
 
