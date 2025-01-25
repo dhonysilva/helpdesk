@@ -6,7 +6,7 @@ defmodule Helpdesk.Accounts do
   resources do
     resource Organization do
       define :create_organization, action: :create
-      define :list_organization, action: :read
+      define :list_organizations, action: :read
       define :update_organization, action: :update
       define :destroy_organization, action: :destroy
       define :get_organization_by_id, args: [:id], action: :by_id

@@ -10,9 +10,13 @@ defmodule Helpdesk.Support.Ticket do
   end
 
   actions do
-    defaults [:read]
+    defaults [:read, :destroy]
 
     create :open do
+      accept [:subject]
+    end
+
+    update :update do
       accept [:subject]
     end
 

@@ -8,6 +8,8 @@ defmodule Helpdesk.Support do
     resource Ticket do
       define :open_ticket, action: :open
       define :list_tickets, action: :read
+      define :update_ticket, action: :update
+      define :destroy_ticket, action: :destroy
     end
 
     resource Helpdesk.Support.Representative
