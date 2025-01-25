@@ -49,7 +49,7 @@ defmodule Helpdesk.Accounts.Organization do
     end
 
     attributes do
-      uuid_primary_dey(:id)
+      uuid_primary_key :id
       attribute :name, :string, allow_nil?: false
       attribute :domain, :string, allow_nil?: false
       attribute :went_live_at, :naive_datetime, allow_nil?: true
